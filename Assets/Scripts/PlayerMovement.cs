@@ -1,17 +1,22 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private InputActionAsset inputActions;
-    private InputAction moveAction;
-    private InputAction jumpAction;
-
+	[SerializeField] private Transform groundCheck;
+	[SerializeField] private Vector2 groundCheckSize = new Vector2(0.5f, 0.1f);
 	[SerializeField] private float speed = 1.0f;
 	[SerializeField] private float jumpForce = 5.0f;
+	[SerializeField] private LayerMask groundLayer;
+
+	private InputAction moveAction;
+    private InputAction jumpAction;
 	private Rigidbody2D rb;
 	private Vector2 direction;
 	private bool isJumping = false;
+	private bool isGrounded;
 
 	private void OnEnable()
 	{
@@ -27,17 +32,15 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+		isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer);
 		direction = moveAction.ReadValue<Vector2>();
-		if (jumpAction.WasPressedThisFrame())
+		if (jumpAction.WasPressedThisFrame() && isGrounded && !isJumping)
 			isJumping = true;
 	}
 
 	private void FixedUpdate()
 	{
-		if (direction.x != 0)
-			rb.linearVelocityX = direction.x * speed;
-		else
-			rb.linearVelocityX = 0;
+		rb.linearVelocity = new Vector2(direction.x * speed, rb.linearVelocity.y);
 
 		if (isJumping)
 		{
