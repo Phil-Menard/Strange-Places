@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
     [SerializeField] private InputActionAsset inputActions;
 	[SerializeField] private Transform groundCheck;
@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
 	private Vector2 direction;
 	private bool isJumping = false;
 	private bool isGrounded;
+
+	public int keys = 0;
 
 	private void OnEnable()
 	{
