@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private float speed = 1.0f;
 	[SerializeField] private float jumpForce = 5.0f;
 	[SerializeField] private LayerMask groundLayer;
+	[SerializeField] private LayerMask platformLayer;
 
 	private InputAction moveAction;
     private InputAction jumpAction;
