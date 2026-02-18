@@ -262,7 +262,11 @@ MonoBehaviour:
   groundCheck: {fileID: 1705144950008603185}
   groundCheckSize: {x: 0.9, y: 0.25}
   speed: 3
-  jumpForce: 6
+  jumpForce: 5
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  platformLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  keys: 0
