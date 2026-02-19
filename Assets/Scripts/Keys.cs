@@ -4,6 +4,7 @@ public class Keys : MonoBehaviour
 {
 	[SerializeField] private Player player;
 	private GameObject parent;
+	private bool gotKey = false;
 
 	private void Awake()
 	{
@@ -12,7 +13,11 @@ public class Keys : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		player.keys++;
-		Destroy(parent);
+		if (!gotKey)
+		{
+			player.keys++;
+			gotKey = true;
+			Destroy(parent);
+		}
 	}
 }
