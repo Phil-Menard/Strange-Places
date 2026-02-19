@@ -8,6 +8,7 @@ public class HorizontalPlatform : MonoBehaviour
     [SerializeField] private Transform waypointRight;
     [SerializeField] private float speed = 2.0f;
 	[SerializeField] private bool isGoingRight = true;
+	private bool isTriggered = false;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -28,17 +29,19 @@ public class HorizontalPlatform : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.CompareTag("Player"))
+		if (other.CompareTag("Player") && !isTriggered)
 		{
 			other.transform.SetParent(this.transform);
+			isTriggered = true;
 		}
 	}
 
 	private void OnTriggerExit2D(Collider2D other)
 	{
-		if (other.CompareTag("Player"))
+		if (other.CompareTag("Player") && isTriggered)
 		{
 			other.transform.SetParent(null);
+			isTriggered = false;
 		}
 	}
 }

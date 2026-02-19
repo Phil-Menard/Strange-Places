@@ -9,9 +9,10 @@ public class VerticalPlatform : MonoBehaviour
     [SerializeField] private Transform waypointBottom;
     [SerializeField] private float speed = 2.0f;
 	[SerializeField] private bool isGoingTop = true;
+	private bool isTriggered = false;
 
-    // Update is called once per frame
-    void FixedUpdate()
+	// Update is called once per frame
+	void FixedUpdate()
     {
         if (isGoingTop)
         {
@@ -39,17 +40,19 @@ public class VerticalPlatform : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.CompareTag("Player"))
+		if (other.CompareTag("Player") && !isTriggered)
 		{
 			other.transform.SetParent(this.transform);
+			isTriggered = true;
 		}
 	}
 
 	private void OnTriggerExit2D(Collider2D other)
 	{
-		if (other.CompareTag("Player"))
+		if (other.CompareTag("Player") && isTriggered)
 		{
 			other.transform.SetParent(null);
+			isTriggered = false;
 		}
 	}
 }
