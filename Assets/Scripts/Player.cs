@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -35,6 +36,8 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+		if (transform.position.y <= -.5f)
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 		isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer);
 		direction = moveAction.ReadValue<Vector2>();
 		if (jumpAction.WasPressedThisFrame() && isGrounded && !isJumping)
