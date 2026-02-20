@@ -103,10 +103,10 @@ TextureImporter:
       name: Platforme_x4_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 42
-        width: 815
-        height: 195
+        x: 18
+        y: 31
+        width: 274
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
