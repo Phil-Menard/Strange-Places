@@ -902,6 +902,10 @@ PrefabInstance:
       value: Step (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8645958253601058849, guid: 2fa799aa1b04dbb4e882958ce461de84, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645958253601058849, guid: 2fa799aa1b04dbb4e882958ce461de84, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.2
       objectReference: {fileID: 0}
@@ -1342,6 +1346,10 @@ PrefabInstance:
       value: Step (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8645958253601058849, guid: 2fa799aa1b04dbb4e882958ce461de84, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645958253601058849, guid: 2fa799aa1b04dbb4e882958ce461de84, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.8
       objectReference: {fileID: 0}
@@ -1462,6 +1470,10 @@ PrefabInstance:
     - target: {fileID: 2086833988636974855, guid: 2fa799aa1b04dbb4e882958ce461de84, type: 3}
       propertyPath: m_Name
       value: Step
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645958253601058849, guid: 2fa799aa1b04dbb4e882958ce461de84, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8645958253601058849, guid: 2fa799aa1b04dbb4e882958ce461de84, type: 3}
       propertyPath: m_LocalPosition.x
