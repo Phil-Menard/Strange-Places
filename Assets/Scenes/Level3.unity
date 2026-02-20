@@ -645,6 +645,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9ed536e3545f61459dc6ff548d8374b, type: 3}
+--- !u!114 &1106399879 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 399458341974786828, guid: 549a9a67a8a5bb34eb06b0d829f39d4c, type: 3}
+  m_PrefabInstance: {fileID: 1266862701}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!224 &1106399880 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4394359224816664354, guid: 549a9a67a8a5bb34eb06b0d829f39d4c, type: 3}
+  m_PrefabInstance: {fileID: 1266862701}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1145067251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -698,6 +714,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8281161651995798009, guid: 3d534bd1af190bb4aaecd034d40a80d5, type: 3}
+      propertyPath: back
+      value: 
+      objectReference: {fileID: 1106399879}
+    - target: {fileID: 8281161651995798009, guid: 3d534bd1af190bb4aaecd034d40a80d5, type: 3}
       propertyPath: play
       value: 
       objectReference: {fileID: 1266862705}
@@ -713,6 +733,10 @@ PrefabInstance:
       propertyPath: options
       value: 
       objectReference: {fileID: 1266862704}
+    - target: {fileID: 8281161651995798009, guid: 3d534bd1af190bb4aaecd034d40a80d5, type: 3}
+      propertyPath: optionsPanel
+      value: 
+      objectReference: {fileID: 1106399880}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
