@@ -32,12 +32,13 @@ public class Door : MonoBehaviour
 	{
 		if (player.keys == nbKeysRequired)
 			changeLevel = true;
-		else
+		else if (tmp)
 			tmp.enabled = true;
 	}
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
-		tmp.enabled = false;
+		if (tmp)
+			tmp.enabled = false;
 	}
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class Player : MonoBehaviour
 
 	private InputAction moveAction;
     private InputAction jumpAction;
+    private InputAction reloadAction;
 	private Rigidbody2D rb;
 	private Vector2 direction;
 	private bool isJumping = false;
@@ -32,14 +34,17 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 		moveAction = InputSystem.actions.FindAction("Move");
 		jumpAction = InputSystem.actions.FindAction("Jump");
+		reloadAction = InputSystem.actions.FindAction("Reload");
 	}
 
     void Update()
     {
-		if (transform.position.y <= -.5f)
+		if (transform.position.y <= -.5f || reloadAction.WasPressedThisFrame())
 			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
 		isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer);
 		direction = moveAction.ReadValue<Vector2>();
+
 		if (jumpAction.WasPressedThisFrame() && isGrounded && !isJumping)
 			isJumping = true;
 	}
