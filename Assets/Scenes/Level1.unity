@@ -245,6 +245,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!114 &758041999 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8281161651995798009, guid: 3d534bd1af190bb4aaecd034d40a80d5, type: 3}
+  m_PrefabInstance: {fileID: 8002530747709330820}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce1bcca052c25f45a4b2f0791da9b30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Menu
 --- !u!114 &1379573610 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2816716557270600069, guid: 549a9a67a8a5bb34eb06b0d829f39d4c, type: 3}
@@ -815,6 +826,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6618980508415666850, guid: 1c8e7174ed7638c4eb4717e34e1e50b8, type: 3}
+      propertyPath: menu
+      value: 
+      objectReference: {fileID: 758041999}
+    - target: {fileID: 6618980508415666850, guid: 1c8e7174ed7638c4eb4717e34e1e50b8, type: 3}
       propertyPath: panel
       value: 
       objectReference: {fileID: 736143163}
@@ -1152,6 +1167,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2733287900399778203}
+  - {fileID: 8002530747709330820}
   - {fileID: 3945118468196405340}
   - {fileID: 1721575612}
   - {fileID: 2512030011908393859}
@@ -1160,5 +1176,4 @@ SceneRoots:
   - {fileID: 1765605232}
   - {fileID: 303809944}
   - {fileID: 6513754845964490601}
-  - {fileID: 8002530747709330820}
   - {fileID: 493925097}

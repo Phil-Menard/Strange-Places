@@ -456,6 +456,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d534bd1af190bb4aaecd034d40a80d5, type: 3}
+--- !u!114 &808478374 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8281161651995798009, guid: 3d534bd1af190bb4aaecd034d40a80d5, type: 3}
+  m_PrefabInstance: {fileID: 808478373}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce1bcca052c25f45a4b2f0791da9b30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Menu
 --- !u!4 &861743844 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7978926214673442375, guid: ca23be4a5c407d9499339390e3426680, type: 3}
@@ -1546,6 +1557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6618980508415666850, guid: 1c8e7174ed7638c4eb4717e34e1e50b8, type: 3}
+      propertyPath: menu
+      value: 
+      objectReference: {fileID: 808478374}
     - target: {fileID: 6618980508415666850, guid: 1c8e7174ed7638c4eb4717e34e1e50b8, type: 3}
       propertyPath: jumpForce
       value: 5.5

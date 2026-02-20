@@ -475,6 +475,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6618980508415666850, guid: 1c8e7174ed7638c4eb4717e34e1e50b8, type: 3}
+      propertyPath: menu
+      value: 
+      objectReference: {fileID: 1145067252}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -714,6 +718,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d534bd1af190bb4aaecd034d40a80d5, type: 3}
+--- !u!114 &1145067252 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8281161651995798009, guid: 3d534bd1af190bb4aaecd034d40a80d5, type: 3}
+  m_PrefabInstance: {fileID: 1145067251}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce1bcca052c25f45a4b2f0791da9b30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Menu
 --- !u!1001 &1266862701
 PrefabInstance:
   m_ObjectHideFlags: 0

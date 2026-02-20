@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
 	private Vector2 direction;
 	private bool isJumping = false;
 	private bool isGrounded;
+	[SerializeField] private Menu menu;
 
 	public int keys = 0;
 
@@ -39,14 +40,17 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-		if (transform.position.y <= -.5f || reloadAction.WasPressedThisFrame())
-			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		if (!menu.isPaused)
+		{
+			if (transform.position.y <= -.5f || reloadAction.WasPressedThisFrame())
+				SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
-		isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer);
-		direction = moveAction.ReadValue<Vector2>();
+			isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer);
+			direction = moveAction.ReadValue<Vector2>();
 
-		if (jumpAction.WasPressedThisFrame() && isGrounded && !isJumping)
-			isJumping = true;
+			if (jumpAction.WasPressedThisFrame() && isGrounded && !isJumping)
+				isJumping = true;
+		}
 	}
 
 	private void FixedUpdate()
