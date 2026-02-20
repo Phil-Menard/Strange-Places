@@ -14,7 +14,7 @@ public class Menu : MonoBehaviour
 
 	private InputAction menuAction;
 	public bool isPaused;
-	public bool hasStarted;
+	private bool hasStarted;
 	private string currentScene;
 	
 
