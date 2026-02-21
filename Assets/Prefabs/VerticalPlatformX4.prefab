@@ -131,7 +131,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 6178962894388675611, guid: b42f88e21d5c58f4b9a3163a81b19c7b, type: 3}
+  m_Sprite: {fileID: 6174317168740055717, guid: bba888f51e943514ab95f2ce05040b50, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -175,17 +175,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.00045073032, y: 0.006844282}
+  m_Offset: {x: 0.0011003017, y: -0.0074139237}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.98, y: 0.75}
+    oldSize: {x: 4.2421055, y: 0.84210527}
     newSize: {x: 3.93, y: 0.74}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.9822195, y: 0.7551694}
+  m_Size: {x: 4.192988, y: 0.80405486}
   m_EdgeRadius: 0
 --- !u!1 &4579211700790100206
 GameObject:
@@ -259,7 +259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4836983303730731149}
   m_Layer: 0
-  m_Name: VerticalPlatform
+  m_Name: VerticalPlatformX4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -368,7 +368,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 6178962894388675611, guid: b42f88e21d5c58f4b9a3163a81b19c7b, type: 3}
+  m_Sprite: {fileID: 6174317168740055717, guid: bba888f51e943514ab95f2ce05040b50, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -460,7 +460,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0011965036, y: -0.0035778284}
+  m_Offset: {x: -0.0013318062, y: -0.0076515675}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -470,7 +470,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.9642351, y: 0.7352326}
+  m_Size: {x: 4.187258, y: 0.80448675}
   m_EdgeRadius: 0
 --- !u!1 &8566194959584310284
 GameObject:
