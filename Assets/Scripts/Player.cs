@@ -50,6 +50,8 @@ public class Player : MonoBehaviour
 				SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
 			isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer);
+			animator.SetBool("isGrounded", isGrounded);
+
 			direction = moveAction.ReadValue<Vector2>();
 			if (direction.x < 0)
 				sprite.flipX = true;
@@ -57,7 +59,10 @@ public class Player : MonoBehaviour
 				sprite.flipX = false;
 
 			if (jumpAction.WasPressedThisFrame() && isGrounded && !isJumping)
+			{
 				isJumping = true;
+				animator.SetBool("isJumping", isJumping);
+			}
 		}
 	}
 
@@ -65,11 +70,13 @@ public class Player : MonoBehaviour
 	{
 		rb.linearVelocity = new Vector2(direction.x * speed, rb.linearVelocity.y);
 		animator.SetFloat("speed", Mathf.Abs(direction.x));
+		animator.SetFloat("velocity", rb.linearVelocityY);
 
 		if (isJumping)
 		{
 			rb.AddForceY(jumpForce, ForceMode2D.Impulse);
 			isJumping = false;
+			animator.SetBool("isJumping", isJumping);
 		}
 	}
 }

@@ -653,7 +653,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5549415016368191684, guid: 2a0e60bc4235b3e488b4bf1d4b738249, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a0e60bc4235b3e488b4bf1d4b738249, type: 3}
@@ -708,6 +709,14 @@ PrefabInstance:
     - target: {fileID: 3353868137574098299, guid: 2a0e60bc4235b3e488b4bf1d4b738249, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725544935302623754, guid: 2a0e60bc4235b3e488b4bf1d4b738249, type: 3}
+      propertyPath: m_Size.x
+      value: 3.9632154
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725544935302623754, guid: 2a0e60bc4235b3e488b4bf1d4b738249, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.8896501
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
