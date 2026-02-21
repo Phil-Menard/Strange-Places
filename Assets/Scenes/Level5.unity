@@ -171,6 +171,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformX4
       objectReference: {fileID: 0}
+    - target: {fileID: 6553138713098752429, guid: e50222d131f497944926366f6fea25c8, type: 3}
+      propertyPath: m_Size.x
+      value: 7.7424173
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553138713098752429, guid: e50222d131f497944926366f6fea25c8, type: 3}
+      propertyPath: m_Offset.x
+      value: 2.562264
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -647,7 +655,8 @@ PrefabInstance:
       value: PlatformX4 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7190718394013579092, guid: e50222d131f497944926366f6fea25c8, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e50222d131f497944926366f6fea25c8, type: 3}
@@ -1780,7 +1789,8 @@ PrefabInstance:
       value: PlatformX4 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7190718394013579092, guid: e50222d131f497944926366f6fea25c8, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e50222d131f497944926366f6fea25c8, type: 3}
