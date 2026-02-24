@@ -97,7 +97,9 @@ public class Menu : MonoBehaviour
 
 		if (x == 3)
 		{
-			#if UNITY_EDITOR
+			#if UNITY_WEBGL
+				SceneManager.LoadScene(0);
+			#elif UNITY_EDITOR
 				UnityEditor.EditorApplication.isPlaying = false;
 			#else
 				Application.Quit();

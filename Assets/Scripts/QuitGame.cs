@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class QuitGame : MonoBehaviour
@@ -13,7 +14,9 @@ public class QuitGame : MonoBehaviour
 
 	public void onButtonClicked()
 	{
-		#if UNITY_EDITOR
+		#if UNITY_WEBGL
+				SceneManager.LoadScene(0);
+		#elif UNITY_EDITOR
 			UnityEditor.EditorApplication.isPlaying = false;
 		#else
 				Application.Quit();

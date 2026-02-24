@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
 	private void OnEnable()
 	{
 		inputActions.FindActionMap("Player").Enable();
+		isGrounded = true;
 	}
 
 	private void Awake()
@@ -40,9 +41,10 @@ public class Player : MonoBehaviour
 		moveAction = InputSystem.actions.FindAction("Move");
 		jumpAction = InputSystem.actions.FindAction("Jump");
 		reloadAction = InputSystem.actions.FindAction("Reload");
+		animator.SetBool("isGrounded", true);
 	}
 
-    void Update()
+	void Update()
     {
 		if (!menu.isPaused)
 		{
@@ -59,10 +61,7 @@ public class Player : MonoBehaviour
 				sprite.flipX = false;
 
 			if (jumpAction.WasPressedThisFrame() && isGrounded && !isJumping)
-			{
 				isJumping = true;
-				animator.SetBool("isJumping", isJumping);
-			}
 		}
 	}
 
@@ -76,7 +75,6 @@ public class Player : MonoBehaviour
 		{
 			rb.AddForceY(jumpForce, ForceMode2D.Impulse);
 			isJumping = false;
-			animator.SetBool("isJumping", isJumping);
 		}
 	}
 }
